@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оруженые Заметки - РЕГИСТРАЦИЯ</title>
+    <link rel="stylesheet" type="text/css" href="AllPagesStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSSVariables.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="AllPagesFunctions.js"></script>
+</head>
+<body>
+    <header class="top-panel flex">
+        <img alt="smth" id="logo" src="ak-47-gun-logo-design.jpg">
+        <div class="buttons-subpanel flex">
+            <a href="index.html"><span class="top-buttons lvl3font">Статьи</span></a>
+            <a href="SiteProjectPage2.html"><span class="top-buttons lvl3font">Галерея</span></a>
+            <a href="SiteProjectPage3.html"><span class="top-buttons lvl3font">Регистрация</span>
+            </a>
+        </div>
+        <div class="contacts-subpanel lvl1font">
+            <p>Будем рады вас услышать!</p>
+            <p>Горячая линия: (0-800) 00-00-00</p>
+            <p>Заходьте: Киев, ул. Крайневажная 54/3</p>
+        </div>
+        <div class="containerSwitcher">
+            <button type="button" id="themeSwitcher">Св. / тем. тема</button>
+        </div>
+    </header>
+    <main class="main-panel">
+        <div class="headerRegistration lvl2font">Заполните все необходимые поля</div>
+            <fieldset class="reg-form lvl1font">
+                <label>Фамилия*: 
+                    <input type="text" id="inputForm1" class="inputForm" maxlength="35" autocomplete="off" required="">
+                </label>
+                <label>Имя*: 
+                    <input type="text" id="inputForm2" class="inputForm" maxlength="35" autocomplete="off" required="">
+                </label>
+                <label>Имейл*: 
+                    <input type="text" id="inputForm3" class="inputForm" maxlength="35" autocomplete="off" required="">
+                </label>
+                <label>Телефон*: 
+                    <input type="text" id="inputForm4" class="inputForm" maxlength="35" autocomplete="off" required="">
+                </label>
+                <label>Питомец: 
+                    <input type="text" class="inputForm" maxlength="35" autocomplete="off">
+                </label>
+                <label>Машина: 
+                    <input type="text" class="inputForm" maxlength="35" autocomplete="off">
+                </label>
+                <label>Пол: 
+                    <select class="inputForm" autocomplete="off">
+                        <option label="Выберите"></option>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                        <option>Непонятный</option>
+                        <option>А я не хочу указывать</option>
+                    </select>
+                </label>
+            </fieldset>
+            <div class="saveButtonContainer flex justify-center">
+            <button type="button" class="saveButton" onclick="validateForm1(), validateForm2(), validateForm3(), validateForm4(), validateAllForms()">СОХРАНИТЬ</button>
+            </div>
+    </main>
+</body>
+</html>
